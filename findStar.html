@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    Star = prompt("StarWhat")
+
+    function Find(x) {
+        A = 'Polaris,Aldebaran,Deneb,Vega,Altair,Dubhe,Regulus'
+        B = 'UrsaMinor,Taurus,Cygnus,Lyra,Aquila,Ursa Major,Leo'
+         Array1 = A.split(',')
+         Array2 = B.split(',')
+        console.log(Array1)
+        for (let i = 0; i < Array1.length; i++) {
+            if (Array1[i] === x) {
+                return Array2[i]
+            } else {
+                return 0
+            }
+        }
+    }
+
+    if (Find(Star)) {
+        console.log(Find(Star).toString())
+    } else {
+        console.log('Cannot Find s')
+    }
+
+
+</script>
+</body>
+</html>
